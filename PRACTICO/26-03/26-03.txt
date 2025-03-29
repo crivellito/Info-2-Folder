@@ -1,0 +1,29 @@
+CLASE 26-03 
+PRÁCTICA
+
+
+ls ---------> imprime los elementos o directorios dentro del directorio actual.
+ls -l ------> mas informacion 
+
+
+pwd --------> print working directory (imprime el directorio en el que la term. se encuentra.
+
+mkdir "Nombre de la carpeta" --------> crear una carpeta con un "nombre".
+
+
+rm --------> borrar directorios. 
+rm --------> "        "        y sus contenidos. 
+
+cat -------> imprime el contenido de un archivo de principio a final.
+
+
+"program" "archivo"  & -------> "&" Hace que el programa a abrir corra en segundo plano.
+
+COMPILACION:
+            gcc "archivo .c  compilar" -o "nombre del programa ya compilado"
+            
+            *Después veremos las etapas de compilacion y como programarlas.
+
+
+
+
