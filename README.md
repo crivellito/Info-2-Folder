@@ -1,2 +1,2 @@
-En este directorio PRIVADO, unicamente subo informacion, codigos, programas, apuntes, resumenes, etc de 
+En este directorio PUBLICO, únicamente subo información, códigos, programas, apuntes, resúmenes, etc de 
 INFORMATICA 2
