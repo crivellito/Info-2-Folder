@@ -1,9 +1,10 @@
 
-
 rm -r / ---------> elimina todo del directorio raiz.
 
 sudo    ---------> otorga permisos de superusuario.
 
+wich    ---------> indica donde estan los binarios de un comando. 
+        |-> which which indica donde estan los binarios del comando wich.
 
 
 
