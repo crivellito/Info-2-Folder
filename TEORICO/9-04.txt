@@ -1,0 +1,9 @@
+
+
+rm -r / ---------> elimina todo del directorio raiz.
+
+sudo    ---------> otorga permisos de superusuario.
+
+
+
+
