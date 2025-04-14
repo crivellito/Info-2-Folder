@@ -1,0 +1,22 @@
+
+
+Donde se encuentra especificada la direccion de los binarios?
+
+    En las variables de entorno. PATH. Son variables propias de la shell.
+    Contienen las direcciones que tienen que buscar los comandos.
+    echo $PATH imprime el contenido de una variable de entorno.
+
+    HOME -> direccion del directorio home.
+    USR  -> direccion del directorio que contiene al usr.
+    PWD  -> direccion actual de la shell. Va cambiando a medida que cambia el directo            rio en el que la shell esta corriendo.
+
+Como modificar una variable de entorno?
+
+    export PATH$=PATH
+    o
+    PATH$=PATH
+
+    Incluir una nueva ruta a la variable de entorno path:
+        
+            PATH=$PATH:$PWD ---------> lo incluye a un programa como comando
+                
