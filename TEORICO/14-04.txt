@@ -1,0 +1,28 @@
+tr : '\n' ----> reemplaza los dos puntos por \n
+
+printenv  ----> imprime las variables de entorno
+
+PATH: variable de entorno que indica la ruta de donde se encuentran todas las variables de entorno.
+
+PATH=$PATH:$PWD establece el directorio actual a la variable de entorno PATH, como ru                ta absoluta.
+
+? : Variable de entorno que devuelve el resultado del ultimo comando ejecutado.
+            |
+            |-> return (a+b) --> ?--> devuelve el valor de retorno de un programa
+
+
+fg ---> trae a la vida un programa suspendido.
+
+
+kill ---> envía una señal a un proceso.
+    |-> -9 'PID' ----> le manda una señal de morirse a un proceso.
+    |
+    |-> Se puede hacer que el programa reciba un entero de una señal de kill
+        Y ejecutar una funcion o reaccionar como el usuario desee segun la señal.
+        Debería agregar al programa la librería que maneja las señales.
+        (singal.h)
+
+
+
+
+
