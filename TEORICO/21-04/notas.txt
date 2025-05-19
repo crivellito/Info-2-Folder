@@ -1,0 +1,43 @@
+//gcc -E devuelve esto: 
+//solo pre procesa.
+
+LO QUE DEVUELVE GCC -
+
+# 0 "1.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "1.c"
+
+
+char cad[] = "Hola mundo";
+
+int main (void){
+
+    return 0;
+}
+
+
+PROGRAMA ORIGINAL
+
+#define TEST "Hola mundo"
+
+char cad[] = TEST;
+
+int main (void){
+
+    return 0;
+}
+
+
+
+MACROS:
+
+
+    #define AREA_CIRCULO(x) ( (PI) * (x) * (x) )
+
+    donde se encuentre el preprocesador con el nombre de la macro. resuelve
+    el preprocesador realiza la operacion por si solo.
+    antes de compilar incluso
+    es mas rapido porque no necesita tiempo para que se corra una funcion aparte.
