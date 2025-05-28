@@ -55,9 +55,19 @@ void loop() {
   Serial.println("Valores de entrada y salida");
 
   for (int i = 0 ; i < 3 ; i++) {
-    if ((state.entradas |= (1<<i)) == 1){
+    if ( state.entradas & (1<<i)) {
       Serial.println("1 ");
-      Serial.println("");
+    } else {
+      Serial.println("0 ");
+  }
 
-
+  for (int i = 0 ; i < 3 ; i++) {
+    if ( state.salidas & (1<<i)) {
+      Serial.println("1 ");
+    } else {
+      Serial.println("0 ");
+    }
+  }
+  delay(500);
+    
 }
