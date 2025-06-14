@@ -1,0 +1,14 @@
+
+
+
+This files that are in this directory are used to explain how do signals in linux work.
+
+Check the .c file of signal3.c that it shows how to use "signal" function and how to detect different
+signal sent by "kill" command.
+
+
+for example: kill -l prints the list of signals that can be sent to a process.
+// The signal3.c file shows how to handle signals like SIGINT, SIGTERM, etc.  
+
+Check out that signal (20, secondHandler) is used to detect the signal of Ctrl+Z 
+to stop the while loop in the signal3 program.
