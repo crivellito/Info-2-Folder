@@ -1,0 +1,10 @@
+gcc -c -fpic hola.c 
+gcc -c -fpic adios.c 
+
+//Para crear una biblioteca dinamica. Se deben compilar los archivos fuente hola.c y adios.c con la opción -fPIC, que indica al compilador que genere código independiente de la posición (Position Independent Code). 
+
+gcc -shared hola.o adios.o -o libsaludo.so
+
+// Luego, se debe crear la biblioteca compartida utilizando el comando gcc con la opción -shared.
+// Finalmente, se debe enlazar la biblioteca compartida con el programa principal utilizando la opción -l.
+// El comando final para compilar el programa principal debe incluir la opción -L para especificar el directorio de la biblioteca compartida y -l para enlazarla.

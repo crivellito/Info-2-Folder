@@ -1,0 +1,4 @@
+gcc -static calc.c /usr/lib/x86_64-linux-gnu/libm.a\ -o calc_static
+
+
+LINKEA el programa calc.c con la biblioteca de matemática. Usando el "-static" para indicar que no haga un linkeo dinámico.
