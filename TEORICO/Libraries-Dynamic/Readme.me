@@ -1,0 +1,18 @@
+//Chequear los Readme.me de los archivos de ./lib y ./lib/funciones
+
+
+
+//Para poder construir el programa una vez creados los .o de las funciones (con -fpic para dinamica), creada la library con -shared para que sea dinamica. Para linkearla al programa se usa:
+
+gcc -o miPrograma main.c -L/ruta_a_la_lib -lnombredelalib 
+//este comando define el nombre del programa, indica la direccion de la library, su nombre, etc
+
+
+//Finalmente para la ejecución del programa hay que indicarle al SO donde se encuentra esa biblioteca al momento de ejecución (ya que es dinámica). Eso se hace con: 
+
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./lib
+//esto agrega a las variables de entorno (enviroment variables) de las librerías la ruta de la librería que acabo de crear
+
+./miProg
+//Y se ejecuta

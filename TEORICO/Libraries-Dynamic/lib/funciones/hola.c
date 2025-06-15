@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "saludo.h"
 
-void adios() {
-    printf("Adiós, hasta luego!\n");
+void hola(const char *nombre) {
+    printf("Hola %s!\n", nombre);
 }
