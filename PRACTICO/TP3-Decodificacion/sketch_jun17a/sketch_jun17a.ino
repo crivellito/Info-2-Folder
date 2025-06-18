@@ -8,14 +8,15 @@ typedef struct {
 } bits;
 */
 
-void deencrypt (char *code) {         
+void decode (char *code) {         
         for (int i = 0; i < 100; i++) {
         char b1 = code[i] & (1 << 0x02);
         char b2 = code[i] & (1 << 0x04);
-        if (b1 != b2) {
+        if (b1 != b2 && code[i] != 'u') {
             code[i] ^= (1 << 0x02);
             code[i] ^= (1 << 0x04);
         }
+        
     }
 }
 
@@ -30,9 +31,14 @@ char code [100];
 //bits bits_status;
 
 void loop () {
+  while(Serial.available()){
     Serial.readBytes (code, 100);
     Serial.print ("Mensaje recibido: ");
-    //Serial.println (code);
-    deencrypt (code);          //, bits_status);
-    //deencrypt (code);
-}
+    Serial.println (code);
+    decode (code);          //, bits_status);
+    Serial.println (code);
+    decode (code);
+    Serial.println (code);
+    Serial.print("FIN");
+  }
+}                                         
