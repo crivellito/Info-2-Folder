@@ -1,0 +1,23 @@
+Se tiene una variable entera sin signo de 8 bits:
+
+unsigned char x = 0b10101100;
+
+
+Enmascarado:
+a) Extrae los 4 bits menos significativos de x.
+b) Extrae los 4 bits más significativos de x.
+
+Set/Clear/Toggle:
+a) Fuerza a 1 el bit número 2 (contando desde 0 el menos significativo).
+b) Fuerza a 0 el bit número 7.
+c) Cambia (toggle) el bit número 3.
+
+Combinación:
+Crea un número nuevo y en el que los 4 bits más significativos provengan de x y los 4 bits menos significativos sean todos 1.
+
+Desplazamientos:
+a) Desplaza x dos posiciones a la izquierda.
+b) Desplaza x tres posiciones a la derecha.
+
+Aplicación conceptual:
+Explica cómo usarías máscaras y desplazamientos de bits para guardar en una sola variable de 16 bits dos valores independientes de 8 bits cada uno (por ejemplo, dos sensores de 0–255).
