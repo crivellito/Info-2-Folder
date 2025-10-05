@@ -1,12 +1,15 @@
 #include <stdio.h>
 unsigned char a = 0xA6;
+unsigned int n = 0xF0F0;
 void bit2_a1 (unsigned char);
 void bit5_a0 (unsigned char);
 void binary_print (unsigned char);
+void contarBits1 (unsigned int);
 
 int main (void) {
     bit2_a1(a);
     bit5_a0(a);  
+    contarBits1(n);
   return 0;
 }
 
@@ -26,6 +29,16 @@ void binary_print (unsigned char a) {
       putchar (a & (1 << i) ? '1' : '0');
     }
     printf("\n");
+}
+
+void contarBits1 (unsigned int n) {
+    int contador = 0;
+    for (int i=16 ; i >= 0 ; i--) {
+      if (n & (1<<i)) {
+        contador++;
+      } 
+    }
+    printf("Cantidad de bits en 'n': %d \n", contador);
 }
 
 
