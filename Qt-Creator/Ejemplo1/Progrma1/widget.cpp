@@ -12,3 +12,16 @@ Widget::~Widget()
 {
     delete ui;
 }
+
+void Widget::slotBorrarLabel()
+{
+    ui->LTextoRecibido->clear();
+
+}
+
+void Widget::on_BEnviar_pressed()
+{
+    QString texto = ui->LETexto->text();
+    ui->LTextoRecibido->setText(texto);
+}
+

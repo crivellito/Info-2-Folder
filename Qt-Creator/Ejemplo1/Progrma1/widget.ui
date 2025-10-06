@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>402</width>
+    <width>468</width>
     <height>305</height>
    </rect>
   </property>
@@ -16,27 +16,27 @@
   <widget class="QPushButton" name="BEnviar">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>240</y>
+     <x>280</x>
+     <y>100</y>
      <width>80</width>
      <height>19</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Enviar</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BSalir">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>240</y>
+     <x>360</x>
+     <y>260</y>
      <width>80</width>
      <height>19</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Salir</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="LETexto">
@@ -44,7 +44,7 @@
     <rect>
      <x>70</x>
      <y>100</y>
-     <width>113</width>
+     <width>201</width>
      <height>21</height>
     </rect>
    </property>
@@ -52,14 +52,27 @@
   <widget class="QLabel" name="LTextoRecibido">
    <property name="geometry">
     <rect>
-     <x>208</x>
-     <y>100</y>
-     <width>111</width>
+     <x>70</x>
+     <y>140</y>
+     <width>241</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BBorrar">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>60</y>
+     <width>80</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Borrar</string>
    </property>
   </widget>
  </widget>
@@ -72,14 +85,33 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>303</x>
-     <y>250</y>
+     <x>439</x>
+     <y>278</y>
     </hint>
     <hint type="destinationlabel">
-     <x>359</x>
-     <y>184</y>
+     <x>438</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BBorrar</sender>
+   <signal>pressed()</signal>
+   <receiver>Widget</receiver>
+   <slot>slotBorrarLabel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>41</y>
     </hint>
    </hints>
   </connection>
  </connections>
+ <slots>
+  <slot>slotBorrarLabel()</slot>
+ </slots>
 </ui>

@@ -17,6 +17,11 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+private slots:
+    void slotBorrarLabel();
+
+    void on_BEnviar_pressed();
+
 private:
     Ui::Widget *ui;
 };
