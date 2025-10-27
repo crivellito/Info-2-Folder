@@ -10,6 +10,10 @@ class funcion_lineal {
       void print_coord ();
       double evaluar (double x);
       double raiz ();
+      friend funcion_lineal operator+(const funcion_lineal& f, const funcion_lineal& g);
+      double operator()(double x);
+
+
     private: 
       double m_coord;
       double b_coord;

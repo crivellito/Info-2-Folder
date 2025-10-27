@@ -30,3 +30,14 @@ double funcion_lineal :: raiz () {
     cout << "Cero de la funcion: " << cero << endl;
     return cero;
 }
+
+funcion_lineal operator+ (const funcion_lineal& f, const funcion_lineal& g) {
+   return funcion_lineal (f.m_coord + g.m_coord, f.b_coord + g.b_coord);
+}
+
+
+double funcion_lineal :: operator() (double x){
+    double valuado = ((m_coord * x) + b_coord);
+    cout << "f(" << x << ") = " << valuado << endl;
+    return valuado;
+}
